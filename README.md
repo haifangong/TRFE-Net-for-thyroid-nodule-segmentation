@@ -1,4 +1,4 @@
-# Multi-Task Learning for Thyroid Nodule Segmentation with Thyroid Region Prior
+# Multi-Task Learning for Thyroid Nodule Segmentation with Thyroid Region Prior[link](https://www.researchgate.net/publication/349074982_MULTI-TASK_LEARNING_FOR_THYROID_NODULE_SEGMENTATION_WITH_THYROID_REGION_PRIOR)
 
 ## Introduction
 Thyroid nodule segmentation in ultrasound images is a valuable and challenging task, and it is of great significance for the diagnosis of thyroid cancer. Due to the lack of the prior knowledge of thyroid region perception, the inherent low contrast of ultrasound images and the complex appearance changes between different frames of ultrasound video, existing automatic segmentation algorithms for thyroid nodules that directly apply semantic segmentation techniques can easily mistake non-thyroid areas as nodules. In this work, we propose a thyroid region prior guided feature enhancement network (TRFE-Net) for thyroid nodule segmentation. In order to facilitate the development of thyroid nodule segmentation, we have contributed TN3k: an open-access dataset of thyroid nodule images with high-quality nodule masks labeling. Our proposed method is evaluated on TN3k and shows outstanding performance compared with existing state-of-the-art algorithms.
@@ -8,7 +8,7 @@ Thyroid nodule segmentation in ultrasound images is a valuable and challenging t
 Overview of the proposed TRFE-Net for thyroid nodule segmentation. 
 
 ![pgfe](./picture/rpg.png)
-Overview of the proposed PGFE-V1 module. 
+Overview of the proposed RPG modules. 
 
 ### License
 This code is released under the MIT License (refer to the LICENSE file for details).
