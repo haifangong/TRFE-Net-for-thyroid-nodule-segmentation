@@ -27,7 +27,7 @@ If you find this work useful in your research, please consider citing:
                Guanbin Li},
   title     = {Multi-Task Learning for Thyroid Nodule Segmentation with Thyroid Region Prior},
   booktitle = {18th {IEEE} International Symposium on Biomedical Imaging, {ISBI}
-               2021, Nice, Antipolis, France, April 13-16, 2020},
+               2021, Nice, Antipolis, France, April 13-16, 2021},
   pages     = {pp.xx-xx},
   publisher = {{IEEE}},
   year      = {2021},
