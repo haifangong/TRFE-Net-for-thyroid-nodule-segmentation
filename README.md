@@ -43,7 +43,7 @@ cuda-10.1
 gpu: TitanX 12GB
 
 ### Dataset and pretrained model
-This dataset will be made available after getting the approval of the related department.
+TN3K dataset: https://pan.baidu.com/s/1-_P_uETgkKs8CsCyVrKYCw with extract code: 49o8.
 
 The pre-trained models can be downloaded from https://pan.baidu.com/s/1i2srV0hIu_a9NLgkm1mpbw with extract code: dol7.
 
