@@ -15,22 +15,15 @@ This code is released under the MIT License (refer to the LICENSE file for detai
 
 ### Citing
 If you find this work useful in your research, please consider citing:
+
 ```BibTex
-@inproceedings{DBLP:conf/isbi/GongMTL2021,
-  author    = {Haifan Gong and
-               Guanqi Chen and
-               Ranran Wang and
-               Xiang Xie and
-               Mingzhi Mao and
-               Yizhou Yu and 
-               Fei Chen and
-               Guanbin Li},
-  title     = {Multi-Task Learning for Thyroid Nodule Segmentation with Thyroid Region Prior},
-  booktitle = {18th {IEEE} International Symposium on Biomedical Imaging, {ISBI}
-               2021, Nice, Antipolis, France, April 13-16, 2021},
-  pages     = {pp.xx-xx},
-  publisher = {{IEEE}},
-  year      = {2021},
+@inproceedings{gong2021multi-task,  
+author={Gong, Haifan and Chen, Guanqi and Wang, Ranran and Xie, Xiang and Mao, Mingzhi and Yu, Yizhou and Chen, Fei and Li, Guanbin},  
+booktitle={2021 IEEE 18th International Symposium on Biomedical Imaging (ISBI)},   
+title={Multi-Task Learning For Thyroid Nodule Segmentation With Thyroid Region Prior},   
+year={2021}, 
+pages={257-261},  
+doi={10.1109/ISBI48211.2021.9434087}
 }
 ```
 
