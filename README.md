@@ -3,17 +3,7 @@
 ## Introduction
 Thyroid nodule segmentation in ultrasound images is a valuable and challenging task, and it is of great significance for the diagnosis of thyroid cancer. Due to the lack of the prior knowledge of thyroid region perception, the inherent low contrast of ultrasound images and the complex appearance changes between different frames of ultrasound video, existing automatic segmentation algorithms for thyroid nodules that directly apply semantic segmentation techniques can easily mistake non-thyroid areas as nodules. In this work, we propose a thyroid region prior guided feature enhancement network (TRFE-Net) for thyroid nodule segmentation. In order to facilitate the development of thyroid nodule segmentation, we have contributed TN3k: an open-access dataset of thyroid nodule images with high-quality nodule masks labeling. Our proposed method is evaluated on TN3k and shows outstanding performance compared with existing state-of-the-art algorithms.
 
-## Architecture
-![Overview](./picture/overview.png)
-Overview of the proposed TRFE-Net for thyroid nodule segmentation. 
-
-![pgfe](./picture/rpg.png)
-Overview of the proposed RPG modules. 
-
-### License
-This code is released under the MIT License (refer to the LICENSE file for details).
-
-### Citing
+## Citing
 If you find this work useful in your research, please consider citing:
 
 ```BibTex
@@ -26,6 +16,16 @@ pages={257-261},
 doi={10.1109/ISBI48211.2021.9434087}
 }
 ```
+
+## Architecture
+![Overview](./picture/overview.png)
+Overview of the proposed TRFE-Net for thyroid nodule segmentation. 
+
+![pgfe](./picture/rpg.png)
+Overview of the proposed RPG modules. 
+
+### License
+This code is released under the MIT License (refer to the LICENSE file for details).
 
 ## Instructions for Code:
 ### Requirements
@@ -65,3 +65,5 @@ The evaluation results on 5 folds.
 | TRFE-1        | 68.82  | 68.03  | 68.02  | 68.93  | 68.40  |    68.44    |    0.38     |
 | TRFE-2        | 68.30  | 68.39  | 67.90  | 68.30  | 68.00  |    68.18    |    0.19     |
 | TRFE-3        | 67.81  | 68.10  | 68.18  | 67.55  | 67.26  |    67.78    |    0.34     |
+
+note: the deeplabv3+ is trained without image pretrain-weight.
