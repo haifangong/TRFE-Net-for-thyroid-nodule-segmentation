@@ -66,4 +66,4 @@ The evaluation results on 5 folds.
 | TRFE-2        | 68.30  | 68.39  | 67.90  | 68.30  | 68.00  |    68.18    |    0.19     |
 | TRFE-3        | 67.81  | 68.10  | 68.18  | 67.55  | 67.26  |    67.78    |    0.34     |
 
-note: the deeplabv3+ is trained without image pretrain-weight.
+note: the deeplabv3+ is trained without ImageNet pretrain-weight.
