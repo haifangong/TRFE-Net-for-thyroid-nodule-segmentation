@@ -3,19 +3,6 @@
 ## Introduction
 Thyroid nodule segmentation in ultrasound images is a valuable and challenging task, and it is of great significance for the diagnosis of thyroid cancer. Due to the lack of the prior knowledge of thyroid region perception, the inherent low contrast of ultrasound images and the complex appearance changes between different frames of ultrasound video, existing automatic segmentation algorithms for thyroid nodules that directly apply semantic segmentation techniques can easily mistake non-thyroid areas as nodules. In this work, we propose a thyroid region prior guided feature enhancement network (TRFE-Net) for thyroid nodule segmentation. In order to facilitate the development of thyroid nodule segmentation, we have contributed TN3k: an open-access dataset of thyroid nodule images with high-quality nodule masks labeling. Our proposed method is evaluated on TN3k and shows outstanding performance compared with existing state-of-the-art algorithms.
 
-## Citing
-If you find this work useful in your research, please consider citing:
-
-```BibTex
-@inproceedings{gong2021multi-task,  
-author={Gong, Haifan and Chen, Guanqi and Wang, Ranran and Xie, Xiang and Mao, Mingzhi and Yu, Yizhou and Chen, Fei and Li, Guanbin},  
-booktitle={2021 IEEE 18th International Symposium on Biomedical Imaging (ISBI)},   
-title={Multi-Task Learning For Thyroid Nodule Segmentation With Thyroid Region Prior},   
-year={2021}, 
-pages={257-261},  
-doi={10.1109/ISBI48211.2021.9434087}
-}
-```
 
 ## Architecture
 ![Overview](./picture/overview.png)
@@ -37,7 +24,7 @@ gpu: TitanX 12GB
 
 ### Dataset and pretrained model
 TN3K dataset: https://pan.baidu.com/s/1-_P_uETgkKs8CsCyVrKYCw with extract code: 49o8.
-
+Or download at https://drive.google.com/file/d/1reHyY5eTZ5uePXMVMzFOq5j3eFOSp50F/view?usp=sharing
 The pre-trained models can be downloaded from https://pan.baidu.com/s/1i2srV0hIu_a9NLgkm1mpbw with extract code: dol7.
 
 ### Training and Evaluation
@@ -67,3 +54,17 @@ The evaluation results on 5 folds.
 | TRFE-3        | 67.81  | 68.10  | 68.18  | 67.55  | 67.26  |    67.78    |    0.34     |
 
 note: the deeplabv3+ is trained without ImageNet pretrain-weight.
+
+## Citing
+If you find this work useful in your research, please consider citing:
+
+```BibTex
+@inproceedings{gong2021multi-task,  
+author={Gong, Haifan and Chen, Guanqi and Wang, Ranran and Xie, Xiang and Mao, Mingzhi and Yu, Yizhou and Chen, Fei and Li, Guanbin},  
+booktitle={2021 IEEE 18th International Symposium on Biomedical Imaging (ISBI)},   
+title={Multi-Task Learning For Thyroid Nodule Segmentation With Thyroid Region Prior},   
+year={2021}, 
+pages={257-261},  
+doi={10.1109/ISBI48211.2021.9434087}
+}
+```
