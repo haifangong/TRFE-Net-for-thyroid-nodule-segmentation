@@ -23,6 +23,8 @@ cuda-10.1
 gpu: TitanX 12GB
 
 ### Dataset and pretrained model
+The compressed dataset is also available under the ``picture'' folder.
+
 TN3K dataset and trained model: https://pan.baidu.com/s/1byqO5sBlt6OQdOxC4-SYng with extract code: trfe 
 
 The dataset could also be downloaded at https://drive.google.com/file/d/1reHyY5eTZ5uePXMVMzFOq5j3eFOSp50F/view?usp=sharing
