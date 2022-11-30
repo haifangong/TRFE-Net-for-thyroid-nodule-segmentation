@@ -36,6 +36,7 @@ def make_testset(root):
 class TN3K(data.Dataset):
     def __init__(self, mode, transform=None, return_size=False, fold=0):
         self.mode = mode
+        # FIXME:for test, 记得改回原来的 ./data/tn3k
         root = './data/tn3k/'
         trainval = json.load(open(root + 'tn3k-trainval-fold'+str(fold)+'.json', 'r'))
         if mode == 'train':
@@ -58,8 +59,8 @@ class TN3K(data.Dataset):
             image = Image.open(image_path).convert('RGB')
             label = np.array(Image.open(label_path).convert('L'))
             label = label / label.max()
-            label = Image.fromarray(label.astype(np.uint8))
 
+            label = Image.fromarray(label.astype(np.uint8))
             w, h = image.size
             size = (h, w)
 

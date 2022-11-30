@@ -47,13 +47,10 @@ class TATN(data.Dataset):
         if mode == 'train':
             nodule_pathes = make_dataset(root, nodule_trainval['train'], 'tn3k/trainval')
             gland_pathes = make_dataset(root, thyroid_trainval['train'], 'tg3k/thyroid')
-            print(len(nodule_pathes))
-            print(len(gland_pathes))
-
             length = min(len(nodule_pathes), len(gland_pathes))
             for i in range(length):
                 nodule_imgs.append(nodule_pathes[i])
-                gland_imgs.append(gland_pathes[int(i*1.4)])
+                gland_imgs.append(gland_pathes[i])
 
         elif mode == 'val':
             nodule_imgs = make_dataset(root, nodule_trainval['val'], 'tn3k/trainval')
@@ -128,7 +125,6 @@ class TATN(data.Dataset):
 
             image = Image.open(image_path).convert('RGB')
             label = np.array(Image.open(label_path).convert('L'))
-
             label = label / label.max()
             label = Image.fromarray(label.astype(np.uint8))
 

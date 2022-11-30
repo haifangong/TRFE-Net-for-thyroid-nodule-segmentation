@@ -213,14 +213,11 @@ def cal_iou(pred, gt, n_classes):
             un = torch.sum(match > 0).item()
             intersect[j] += it
             union[j] += un
-        # print("intersect: {}".format(intersect))
-        # print("union: {}".format(union))
         iou = []
         for k in range(n_classes):
             if union[k] == 0:
                 continue
             iou.append(intersect[k] / union[k])
-        # print("iou: {}".format(iou))
         img_iou = (sum(iou) / len(iou))
         total_iou += img_iou
     return total_iou
