@@ -67,7 +67,7 @@ class Deeplabv3plus(nn.Module):
                 nn.Conv2d(256, n_classes, kernel_size=1, stride=1)
             )
         elif backbone_type == 'resnet50':
-            self.backbone_features = ResNet50()
+            self.backbone_features = ResNet50(nInputChannels, os, pretrained=True)
             asppInputChannels = 2048
             asppOutputChannels = 256
             lowInputChannels = 256

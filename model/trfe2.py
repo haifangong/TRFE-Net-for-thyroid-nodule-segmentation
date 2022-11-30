@@ -115,6 +115,7 @@ class TRFENet2(nn.Module):
         merge7t = torch.cat([up_7t, c3], dim=1)
         c7t = self.conv7t(merge7t)
 
+
         up_8t = self.up8t(c7t)
         merge8t = torch.cat([up_8t, c2], dim=1)
         c8t = self.conv8t(merge8t)
@@ -126,6 +127,10 @@ class TRFENet2(nn.Module):
         thyroid = self.conv10t(c9t)
 
         # thyroid_norm = nn.Sigmoid()(thyroid)
+        # c6t = torch.sigmoid(c6t)
+        # c7t = torch.sigmoid(c7t)
+        # c8t = torch.sigmoid(c8t)
+        # c9t = torch.sigmoid(c9t)
 
         up_6 = self.up6(c5)
         merge6 = torch.cat([up_6, c4], dim=1)

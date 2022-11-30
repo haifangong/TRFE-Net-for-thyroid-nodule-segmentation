@@ -45,13 +45,11 @@ class Unet(nn.Module):
 
     def _init_weight(self):
         for m in self.modules():
-            if isinstance(m, nn.Conv2d) or isinstance(m, nn.Linear):
-                nn.init.xavier_normal_(m.weight)
-                if m.bias is not None:
-                    nn.init.constant_(m.bias, 0)
-                elif isinstance(m, nn.BatchNorm2d):
-                    nn.init.constant_(m.weight, 1)
-                    nn.init.constant_(m.bias, 0)
+            if isinstance(m, nn.Conv2d):
+                nn.init.kaiming_normal_(m.weight, mode='fan_out')
+            elif isinstance(m, (nn.BatchNorm2d, nn.GroupNorm)):
+                nn.init.constant_(m.weight, 1)
+                nn.init.constant_(m.bias, 0)
 
     def forward(self, x):
         c1 = self.conv1(x)
@@ -63,6 +61,7 @@ class Unet(nn.Module):
         c4 = self.conv4(p3)
         p4 = self.pool4(c4)
         c5 = self.conv5(p4)
+
         up_6 = self.up6(c5)
         merge6 = torch.cat([up_6, c4], dim=1)
         c6 = self.conv6(merge6)
@@ -79,3 +78,10 @@ class Unet(nn.Module):
         # out = nn.Sigmoid()(c10)
         out = c10
         return out
+
+
+if __name__ == '__main__':
+    inputs = torch.ones(4, 3, 224, 224).cuda()
+    model = Unet(3, 1).cuda()
+    out = model(inputs)
+    print(out.shape)

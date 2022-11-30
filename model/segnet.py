@@ -32,9 +32,7 @@ class SegNet(nn.Module):
 
         self.num_channels = input_channels
 
-        self.vgg16 = models.vgg16(pretrained=False)
-        self.vgg16.load_state_dict(torch.load('/media/SecondDisk/chenguanqi/thyroid_seg/pre_train/vgg16-397923af.pth'))
-
+        self.vgg16 = models.vgg16(pretrained=True)
 
         # Encoder layers
 
@@ -301,9 +299,9 @@ class SegNet(nn.Module):
         x_0d = F.max_unpool2d(x_10d, indices_0, kernel_size=2, stride=2, output_size=dim_0)
         x_01d = F.relu(self.decoder_convtr_01(x_0d))
         x_00d = self.decoder_convtr_00(x_01d)
-        dim_0d = x_00d.size()
+        # dim_0d = x_00d.size()
 
-        x_softmax = F.softmax(x_00d, dim=1)
+        # x_softmax = F.softmax(x_00d, dim=1)
 
 
         if DEBUG:
@@ -318,7 +316,7 @@ class SegNet(nn.Module):
             print("dim_3d: {}".format(dim_3d))
             print("dim_2d: {}".format(dim_2d))
             print("dim_1d: {}".format(dim_1d))
-            print("dim_0d: {}".format(dim_0d))
+            # print("dim_0d: {}".format(dim_0d))
 
 
         return x_00d
