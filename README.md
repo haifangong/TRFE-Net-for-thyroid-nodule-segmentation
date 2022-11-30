@@ -16,11 +16,10 @@ This code is released under the MIT License (refer to the LICENSE file for detai
 
 ## Instructions for Code:
 ### Requirements
-python-3.7
-pytorch-1.5.1
-torchvision-0.6.1
-cuda-10.1
-gpu: TitanX 12GB
+python3.7-3.9
+pytorch >= 1.5
+torchvision >= 0.6.1
+cuda >= 10.1
 
 ### Dataset and pretrained model
 The compressed dataset is also available under the ``picture'' folder.
@@ -30,15 +29,7 @@ TN3K dataset and trained model: https://pan.baidu.com/s/1byqO5sBlt6OQdOxC4-SYng 
 The dataset could also be downloaded at https://drive.google.com/file/d/1reHyY5eTZ5uePXMVMzFOq5j3eFOSp50F/view?usp=sharing
 
 ### Training and Evaluation
-Training script.
-```bash
-python train.py -fold 0 -model_name trfe -dataset TATN -gpu 0
-``` 
-
-Evaluation script.
-```bash
-python eval.py -model_name trfe -load_path './run/run_0/trfe_best.pth'
-```
+Please refer to train_trfe.sh and test_trfe.sh
 
 ## Citing
 If you find this work useful in your research or use this dataset in your work, please consider citing the following papers:
