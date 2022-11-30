@@ -41,7 +41,7 @@ python eval.py -model_name trfe -load_path './run/run_0/trfe_best.pth'
 ```
 
 ## Citing
-If you find this work useful in your research or used this dataset in your work, please consider citing the following papers:
+If you find this work useful in your research or use this dataset in your work, please consider citing the following papers:
 
 ```BibTex
 @inproceedings{gong2021multi-task,  
