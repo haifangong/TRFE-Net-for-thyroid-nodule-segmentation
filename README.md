@@ -40,33 +40,40 @@ Evaluation script.
 python eval.py -model_name trfe -load_path './run/run_0/trfe_best.pth'
 ```
 
-### Evaluation result
-The evaluation results on 5 folds.
-
-| Models        | fold 1 | fold 2 | fold 3 | fold 4 | fold 5 | Jaccard-avg | Jaccard-std |
-|---------------|--------|--------|--------|--------|--------|-------------|-------------|
-| FCN           | 65.50  | 65.59  | 64.30  | 65.74  | 65.85  |    65.40    |    0.56     |
-| Segnet        | 62.39  | 62.17  | 62.22  | 61.84  | 61.19  |    61.96    |    0.43     |
-| Deeplabv3+    | 53.99  | 54.45  | 53.40  | 54.23  | 53.36  |    53.89    |    0.44     |
-| Unet          | 63.22  | 64.38  | 63.19  | 63.35  | 63.39  |    63.51    |    0.44     |
-| Pretrain-Unet | 63.69  | 64.48  | 64.30  | 62.94  | 64.06  |    63.89    |    0.55     |
-| MT-net        | 67.88  | 67.28  | 68.18  | 68.28  | 67.93  |    67.91    |    0.35     |
-| TRFE-1        | 68.82  | 68.03  | 68.02  | 68.93  | 68.40  |    68.44    |    0.38     |
-| TRFE-2        | 68.30  | 68.39  | 67.90  | 68.30  | 68.00  |    68.18    |    0.19     |
-| TRFE-3        | 67.81  | 68.10  | 68.18  | 67.55  | 67.26  |    67.78    |    0.34     |
-
-note: the deeplabv3+ is trained without ImageNet pretrain-weight.
-
 ## Citing
 If you find this work useful in your research, please consider citing:
 
 ```BibTex
 @inproceedings{gong2021multi-task,  
-author={Gong, Haifan and Chen, Guanqi and Wang, Ranran and Xie, Xiang and Mao, Mingzhi and Yu, Yizhou and Chen, Fei and Li, Guanbin},  
-booktitle={2021 IEEE 18th International Symposium on Biomedical Imaging (ISBI)},   
-title={Multi-Task Learning For Thyroid Nodule Segmentation With Thyroid Region Prior},   
-year={2021}, 
-pages={257-261},  
-doi={10.1109/ISBI48211.2021.9434087}
+  author={Gong, Haifan and Chen, Guanqi and Wang, Ranran and Xie, Xiang and Mao, Mingzhi and Yu, Yizhou and Chen, Fei and Li, Guanbin},  
+  booktitle={2021 IEEE 18th International Symposium on Biomedical Imaging (ISBI)},   
+  title={Multi-Task Learning For Thyroid Nodule Segmentation With Thyroid Region Prior},   
+  year={2021}, 
+  pages={257-261},  
+  doi={10.1109/ISBI48211.2021.9434087}
+}
+
+@article{gong2022thyroid,
+  title={Thyroid Region Prior Guided Attention for Ultrasound Segmentation of Thyroid Nodules},
+  author={Gong, Haifan and Chen, Jiaxin and Chen, Guanqi and Li, Haofeng and Chen, Fei and Li, Guanbin},
+  journal={Computers in biology and medicine},
+  volume={0},
+  pages={1--12},
+  year={2022},
+  publisher={Elsevier}
+}
+
+```
+
+The label for this dataset could refer to 
+```BibTex
+@inproceedings{gong2022less,
+  title={Less is More: Adaptive Curriculum Learning for Thyroid Nodule Diagnosis},
+  author={Gong, Haifan and Cheng, Hui and Xie, Yifan and Tan, Shuangyi and Chen, Guanqi and Chen, Fei and Li, Guanbin},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
+  pages={248--257},
+  year={2022},
+  organization={Springer}
 }
 ```
+
