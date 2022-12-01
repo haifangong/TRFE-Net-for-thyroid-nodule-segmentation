@@ -1,15 +1,12 @@
-# Multi-Task Learning for Thyroid Nodule Segmentation with Thyroid Region Prior [link](https://www.researchgate.net/publication/349074982_MULTI-TASK_LEARNING_FOR_THYROID_NODULE_SEGMENTATION_WITH_THYROID_REGION_PRIOR)
+# TRFE-Plus: Thyroid Region Prior Guided Attention for Ultrasound Segmentation of Thyroid Nodules [journel](https://www.researchgate.net/publication/349074982_MULTI-TASK_LEARNING_FOR_THYROID_NODULE_SEGMENTATION_WITH_THYROID_REGION_PRIOR)
+Previous TRFE-Net in ISBI-2021: Multi-Task Learning for Thyroid Nodule Segmentation with Thyroid Region Prior [conference](https://www.researchgate.net/publication/349074982_MULTI-TASK_LEARNING_FOR_THYROID_NODULE_SEGMENTATION_WITH_THYROID_REGION_PRIOR)
 
 ## Introduction
-Thyroid nodule segmentation in ultrasound images is a valuable and challenging task, and it is of great significance for the diagnosis of thyroid cancer. Due to the lack of the prior knowledge of thyroid region perception, the inherent low contrast of ultrasound images and the complex appearance changes between different frames of ultrasound video, existing automatic segmentation algorithms for thyroid nodules that directly apply semantic segmentation techniques can easily mistake non-thyroid areas as nodules. In this work, we propose a thyroid region prior guided feature enhancement network (TRFE-Net) for thyroid nodule segmentation. In order to facilitate the development of thyroid nodule segmentation, we have contributed TN3k: an open-access dataset of thyroid nodule images with high-quality nodule masks labeling. Our proposed method is evaluated on TN3k and shows outstanding performance compared with existing state-of-the-art algorithms.
-
+Ultrasound segmentation of thyroid nodules is a challenging task, which plays an vital role in the diagnosis of thyroid cancer. However, the following two factors limit the development of automatic thyroid nodule segmentation algorithms: (1) existing automatic nodule segmentation algorithms that directly apply semantic segmentation techniques can easily mistake non-thyroid areas as nodules, because of the lack of the thyroid gland region perception, the large number of similar areas in the ultrasonic images, and the inherently low contrast images; (2) the currently available dataset (i.e., DDTI) is small and collected from a single center, which violates the fact that thyroid ultrasound images are acquired from various devices in real-world situations. To overcome the lack of thyroid gland region prior knowledge, we design a thyroid region prior guided feature enhancement network (TRFE+) for accurate thyroid nodule segmentation. Specifically, (1) a novel multi-task learning framework that simultaneously learns the nodule size, gland position, and the nodule position is designed; (2) an adaptive gland region feature enhancement module is proposed to make full use of the thyroid gland prior knowledge; (3) a normalization approach with respect to the channel dimension is applied to alleviate the domain gap during the training process. To facilitate the development of thyroid nodule segmentation, we have contributed TN3K: an open-access dataset containing 3493 thyroid nodule images with high-quality nodule masks labeling from various devices and views. We perform a thorough evaluation based on the TN3K test set and DDTI to demonstrate the effectiveness of the proposed method.
 
 ## Architecture
-![Overview](./picture/overview.png)
-Overview of the proposed TRFE-Net for thyroid nodule segmentation. 
-
-![pgfe](./picture/rpg.png)
-Overview of the proposed RPG modules. 
+![Overview](./picture/overview.jpg)
+Overview of the proposed TRFE-Plus for thyroid nodule segmentation. 
 
 ### License
 This code is released under the MIT License (refer to the LICENSE file for details).
@@ -48,7 +45,7 @@ If you find this work useful in your research or use this dataset in your work, 
   title={Thyroid Region Prior Guided Attention for Ultrasound Segmentation of Thyroid Nodules},
   author={Gong, Haifan and Chen, Jiaxin and Chen, Guanqi and Li, Haofeng and Chen, Fei and Li, Guanbin},
   journal={Computers in Biology and Medicine},
-  volume={0},
+  volume={106389},
   pages={1--12},
   year={2022},
   publisher={Elsevier}
