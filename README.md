@@ -1,4 +1,4 @@
-# TRFE-Plus: Thyroid Region Prior Guided Attention for Ultrasound Segmentation of Thyroid Nodules [journel](https://www.researchgate.net/publication/349074982_MULTI-TASK_LEARNING_FOR_THYROID_NODULE_SEGMENTATION_WITH_THYROID_REGION_PRIOR)
+# TRFE-Plus: Thyroid Region Prior Guided Attention for Ultrasound Segmentation of Thyroid Nodules [journal](https://www.sciencedirect.com/science/article/pii/S0010482522010976)
 Previous TRFE-Net in ISBI-2021: Multi-Task Learning for Thyroid Nodule Segmentation with Thyroid Region Prior [conference](https://www.researchgate.net/publication/349074982_MULTI-TASK_LEARNING_FOR_THYROID_NODULE_SEGMENTATION_WITH_THYROID_REGION_PRIOR)
 
 ## Introduction
