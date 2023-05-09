@@ -53,7 +53,7 @@ If you find this work useful in your research or use this dataset in your work, 
 
 ```
 
-The label for this dataset could refer to where 0 denotes for benign while 1 denotes for malignant.
+The label for this dataset could refer to the following article, where 0 denotes for benign while 1 denotes for malignant.
 ```BibTex
 @inproceedings{gong2022less,
   title={Less is More: Adaptive Curriculum Learning for Thyroid Nodule Diagnosis},
