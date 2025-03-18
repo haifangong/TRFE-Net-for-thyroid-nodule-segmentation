@@ -19,7 +19,7 @@ torchvision >= 0.6.1
 cuda >= 10.1
 
 ### Dataset and pretrained model
-#### For classification, 0 indicate benign, while 1 denotes malignant cases.
+#### For classification, 0 indicate benign, while 1 denotes malignant cases. (https://github.com/chenghui-666/ACL)
 The compressed dataset is also available under the ``picture'' folder.
 
 TN3K dataset and trained model: https://pan.baidu.com/s/1byqO5sBlt6OQdOxC4-SYng with extract code: trfe 
