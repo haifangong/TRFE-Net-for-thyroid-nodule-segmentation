@@ -42,13 +42,13 @@ If you find this work useful in your research or use this dataset in your work, 
   doi={10.1109/ISBI48211.2021.9434087}
 }
 
-@article{gong2022thyroid,
-  title={Thyroid Region Prior Guided Attention for Ultrasound Segmentation of Thyroid Nodules},
-  author={Gong, Haifan and Chen, Jiaxin and Chen, Guanqi and Li, Haofeng and Chen, Fei and Li, Guanbin},
-  journal={Computers in Biology and Medicine},
-  volume={106389},
-  pages={1--12},
-  year={2022},
+@article{gong2023thyroid,
+  title={Thyroid region prior guided attention for ultrasound segmentation of thyroid nodules},
+  author={Gong, Haifan and Chen, Jiaxin and Chen, Guanqi and Li, Haofeng and Li, Guanbin and Chen, Fei},
+  journal={Computers in biology and medicine},
+  volume={155},
+  pages={106389},
+  year={2023},
   publisher={Elsevier}
 }
 
